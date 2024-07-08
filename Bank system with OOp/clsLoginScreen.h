@@ -12,10 +12,10 @@ class clsLoginScreen :protected clsScreen
 
 private:
 
-    static  void _Login()
+    static  bool _Login()
     {
         bool LoginFaild = false;
-
+        int counter = 3;
         string Username, Password;
         do
         {
@@ -23,6 +23,16 @@ private:
             if (LoginFaild)
             {
                 cout << "\nInvlaid Username/Password!\n\n";
+                counter--;
+                if (counter >= 1)
+                {
+                    cout << "You have " << counter << " Trails to login\n\n";
+                }
+                else if (counter <= 0)
+                {
+                    cout << "\n\nYou are looked after 3 feils trails\n";
+                    return false;
+                }
             }
 
             cout << "Enter Username? ";
@@ -44,11 +54,11 @@ private:
 public:
 
 
-    static void ShowLoginScreen()
+    static bool ShowLoginScreen()
     {
         system("cls");
         _DrawScreenHeader("\t  Login Screen");
-        _Login();
+        return _Login();
 
     }
 

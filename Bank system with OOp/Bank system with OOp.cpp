@@ -7,8 +7,11 @@ using namespace std;
 
 int main()
 {
-    clsLoginScreen::ShowLoginScreen();
-    system("pause > 0");\
-
+    while (true)
+    {
+        if (!clsLoginScreen::ShowLoginScreen()) {
+            break;
+        }
+    }
     return 0;
 }
