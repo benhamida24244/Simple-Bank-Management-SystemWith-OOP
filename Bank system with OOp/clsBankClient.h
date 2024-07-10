@@ -409,6 +409,18 @@ public:
         }
 
     }
+    bool Transfert(float amount, clsBankClient& Client) {
+        if (amount > AccountBalance)
+        {
+            return false;
+        }
+        else
+        {
+            Withdraw(amount);
+            Client.Deposit(amount);
+            return true;
+        }
+    }
     static double GetTotalBalances()
     {
         vector <clsBankClient> vClients = clsBankClient::GetClientsList();

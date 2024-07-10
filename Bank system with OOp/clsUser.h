@@ -29,8 +29,7 @@ private:
         LoginRecord += to_string(Permissions);
         return LoginRecord;
     }
-
-    static clsUser _ConvertLinetoUserObject(string Line, string Seperator = "#//#")
+       static clsUser _ConvertLinetoUserObject(string Line, string Seperator = "#//#")
     {
         vector<string> vUserData;
         vUserData = clsString::Split(Line, Seperator);
@@ -39,6 +38,7 @@ private:
             vUserData[3], vUserData[4], vUserData[5], stoi(vUserData[6]));
 
     }
+
 
     static string _ConverUserObjectToLine(clsUser User, string Seperator = "#//#")
     {
@@ -164,7 +164,7 @@ public:
 
     enum enPermissions {
         eAll = -1, pListClients = 1, pAddNewClient = 2, pDeleteClient = 4,
-        pUpdateClients = 8, pFindClient = 16, pTranactions = 32, pManageUsers = 64
+        pUpdateClients = 8, pFindClient = 16, pTranactions = 32, pManageUsers = 64,pLoginHistory = 128
     };
 
     clsUser(enMode Mode, string FirstName, string LastName,
@@ -369,7 +369,44 @@ public:
             return false;
 
     }
+    struct LoginHistory
+    {
+        string time;
+        string Username;
+        string Password;
+        int permission;
+    };
+    static LoginHistory _ConvertLinetoLoginHistoryStruct(string Line, string Seperator = "#//#")
+    {
+        LoginHistory LoginRegisterRecord;
+        vector<string> vLoginData;
+        vLoginData = clsString::Split(Line, Seperator);
+        LoginRegisterRecord.time = vLoginData[0];
+        LoginRegisterRecord.Username = vLoginData[1];
+        LoginRegisterRecord.Password = vLoginData[2];
+        LoginRegisterRecord.permission = stoi(vLoginData[3]);
+        return LoginRegisterRecord;
+    }
 
+
+
+    static vector<LoginHistory> LoadLoginHistoryDataFromFile() {
+        vector<LoginHistory> vLogin;
+        fstream MyFile;
+        MyFile.open("LoginRegister.txt", ios::in);
+        if (MyFile.is_open())
+        {
+            string Line;
+            LoginHistory Login;
+            while (getline(MyFile, Line))
+            {
+                 Login = _ConvertLinetoLoginHistoryStruct(Line);
+                vLogin.push_back(Login);
+            }
+            MyFile.close();
+        }
+        return vLogin;
+    }
 
     void RegisterLogIn()
     {
@@ -388,7 +425,8 @@ public:
         }
 
     }
-
+   
 };
+
 
 

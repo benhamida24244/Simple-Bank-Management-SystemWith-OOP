@@ -113,6 +113,12 @@ private:
         {
             Permissions += clsUser::enPermissions::pManageUsers;
         }
+        cout << "\nShow Login History? y/n? ";
+        cin >> Answer;
+        if (Answer == 'y' || Answer == 'Y')
+        {
+            Permissions += clsUser::enPermissions::pLoginHistory;
+        }
 
         return Permissions;
 
