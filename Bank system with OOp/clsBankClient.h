@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <sstream>
 #include "clsPerson.h"
 #include "clsString.h"
 #include <vector>
@@ -32,7 +33,20 @@ private:
             vClientData[3], vClientData[4], vClientData[5], stod(vClientData[6]));
 
     }
-
+    struct InfoTransfer;
+    static InfoTransfer _ConvertLinetoTransferHistoryStruct(string line , string Seperator = "#//#") {
+        vector <string> Vlogin;
+        InfoTransfer info;
+        Vlogin = clsString::Split(line , Seperator);
+        info.Date = Vlogin[0];
+        info.Saact = Vlogin[1];
+        info.Daact = Vlogin[2];
+        info.amount = stod(Vlogin[3]);
+        info.Sbalace = stod(Vlogin[4]);
+        info.Dbalance = stod(Vlogin[5]);
+        info.User = Vlogin[6];
+        return info;
+    }
     static string _ConverClientObjectToLine(clsBankClient Client, string Seperator = "#//#")
     {
 
@@ -107,6 +121,20 @@ private:
         }
 
     }
+
+    static string _PrepareTransferRecord(string Seperator, clsBankClient Client1 , clsBankClient Client2 , double amount)
+    {
+        string LoginRecord = "";
+        LoginRecord += clsDate::GetSystemDateTimeString() + Seperator;
+        LoginRecord += Client1.AccountNumber() + Seperator;
+        LoginRecord += Client2.AccountNumber() + Seperator;
+        LoginRecord += to_string(amount) + Seperator;
+        LoginRecord += to_string(Client1.AccountBalance) + Seperator;
+        LoginRecord += to_string(Client2.AccountBalance) + Seperator;
+        LoginRecord += CurrentUser.UserName;
+        return LoginRecord;
+    }
+
 
     void _Update()
     {
@@ -418,6 +446,7 @@ public:
         {
             Withdraw(amount);
             Client.Deposit(amount);
+            TransferHistory("#//#", *this, Client, amount);
             return true;
         }
     }
@@ -435,5 +464,58 @@ public:
 
         return TotalBalances;
     }
+
+    struct InfoTransfer {
+        string Date;
+        string Saact;
+        string Daact;
+        double amount;
+        double Sbalace;
+        double Dbalance;
+        string User;
+    };
+    
+
+        static vector<InfoTransfer> LoadTransferHistoryDataFromFile() {
+                 vector<InfoTransfer> vTransfer;
+                 fstream MyFile;
+                 MyFile.open("TransferHistory.txt", ios::in);
+                 if (MyFile.is_open())
+                 {
+                     string Line;
+                     InfoTransfer Transfer;
+                     while (getline(MyFile , Line))
+                     {
+                         Transfer = _ConvertLinetoTransferHistoryStruct(Line);
+                         vTransfer.push_back(Transfer);
+                        
+                     }
+                    MyFile.close();
+                 }
+                 return vTransfer;
+    }
+
+
+
+
+
+    static void TransferHistory(string separitor , clsBankClient client1 , clsBankClient client2 , double amount) {
+            string stDataLine = _PrepareTransferRecord(separitor , client1 , client2 , amount);
+            fstream MyFile;
+            MyFile.open("TransferHistory.txt", ios::out | ios::app);
+
+            if (MyFile.is_open())
+            {
+
+                MyFile << stDataLine << endl;
+
+                MyFile.close();
+            }
+    }
+
+
+
+
+
 
 };

@@ -13,7 +13,7 @@ private:
 
         cout << setw(8) << left << "" << "| " << setw(45) << left << info.time;
         cout << "| " << setw(20) << left << info.Username;
-        cout << "| " << setw(12) << left << info.Password;
+        cout << "| " << setw(12) << left << clsInputValidate::IncryptPassword(info.Password);
         cout << "| " << setw(20) << left << info.permission;
     }
 

@@ -25,7 +25,7 @@ private:
         User.Phone = clsInputValidate::ReadString();
 
         cout << "\nEnter Password: ";
-        User.Password = clsInputValidate::ReadString();
+        User.Password = clsInputValidate::DecryptPassword(clsInputValidate::ReadString());
 
         cout << "\nEnter Permission: ";
         User.Permissions = _ReadPermissionsToSet();
@@ -41,7 +41,7 @@ private:
         cout << "\nEmail       : " << User.Email;
         cout << "\nPhone       : " << User.Phone;
         cout << "\nUser Name   : " << User.UserName;
-        cout << "\nPassword    : " << User.Password;
+        cout << "\nPassword    : " << clsInputValidate::IncryptPassword(User.Password);
         cout << "\nPermissions : " << User.Permissions;
         cout << "\n___________________\n";
 

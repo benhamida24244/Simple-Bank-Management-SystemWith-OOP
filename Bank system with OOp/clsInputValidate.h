@@ -159,4 +159,21 @@ public:
 		getline(cin >> ws, S1);
 		return S1;
 	}
+	
+	static string DecryptPassword(string S1 , short EncryptionKey = 2) {
+		for (int i = 0; i < S1.length(); i++)
+		{
+			S1[i] = char((int)S1[i] + EncryptionKey);
+		}
+		return S1;
+	}
+	
+	static string IncryptPassword(string S1 , short EncryptionKey = 2) {
+		for (int i = 0; i < S1.length(); i++)
+		{
+			S1[i] = char((int)S1[i] - EncryptionKey);
+		}
+		return S1;
+	}
+
 };

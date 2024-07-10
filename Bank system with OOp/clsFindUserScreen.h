@@ -19,7 +19,7 @@ private:
         cout << "\nEmail       : " << User.Email;
         cout << "\nPhone       : " << User.Phone;
         cout << "\nUserName    : " << User.UserName;
-        cout << "\nPassword    : " << User.Password;
+        cout << "\nPassword    : " << clsInputValidate::IncryptPassword(User.Password);
         cout << "\nPermissions : " << User.Permissions;
         cout << "\n___________________\n";
 

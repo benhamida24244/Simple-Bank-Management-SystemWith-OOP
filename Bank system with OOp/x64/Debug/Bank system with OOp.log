@@ -1,21 +1,23 @@
 ﻿  Bank system with OOp.cpp
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsString.h(39,1): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsString.h(44,1): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsString.h(56,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsString.h(193,1): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsString.h(324,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsString.h(372,1): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsInputValidate.h(119,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsInputValidate.h(123,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsBankClient.h(32,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsBankClient.h(394,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsBankClient.h(406,1): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsAddNewClientsScreen.h(30,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsShowUpdateClientScreen.h(46,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsUtil.h(64,1): warning C4102: 'defualt': unreferenced label
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsTotalBalancesScreen.h(57,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsTransferBalance.h(69,36): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsLoginScreen.h(52): warning C4715: 'clsLoginScreen::_Login': not all control paths return a value
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsBankClient.h(355): warning C4715: 'clsBankClient::Save': not all control paths return a value
-C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\Bank system with OOp\clsUser.h(319): warning C4715: 'clsUser::Save': not all control paths return a value
-  Bank system with OOp.vcxproj -> C:\Users\LENOVO\Desktop\C++ project\Simple-Bank-Management-SystemWith-OOP-main\x64\Debug\Bank system with OOp.exe
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsString.h(39,1): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsString.h(44,1): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsString.h(56,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsString.h(193,1): warning C4267: 'return': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsString.h(324,1): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsString.h(372,1): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsInputValidate.h(119,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsInputValidate.h(123,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsBankClient.h(468,25): warning C4240: nonstandard extension used: access to 'clsBankClient::InfoTransfer' now defined to be 'public', previously it was defined to be 'private'
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsBankClient.h(36): message : see declaration of 'clsBankClient::InfoTransfer'
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsBankClient.h(33,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsBankClient.h(422,1): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsBankClient.h(434,1): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsAddNewClientsScreen.h(30,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsShowUpdateClientScreen.h(46,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsUtil.h(64,1): warning C4102: 'defualt': unreferenced label
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsTotalBalancesScreen.h(57,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsTransferBalance.h(69,36): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsLoginScreen.h(52): warning C4715: 'clsLoginScreen::_Login': not all control paths return a value
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsBankClient.h(383): warning C4715: 'clsBankClient::Save': not all control paths return a value
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsUser.h(320): warning C4715: 'clsUser::Save': not all control paths return a value
+  Bank system with OOp.vcxproj -> C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\x64\Debug\Bank system with OOp.exe

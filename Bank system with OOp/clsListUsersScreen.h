@@ -15,7 +15,7 @@ private:
         cout << "| " << setw(25) << left << User.FullName();
         cout << "| " << setw(12) << left << User.Phone;
         cout << "| " << setw(20) << left << User.Email;
-        cout << "| " << setw(10) << left << User.Password;
+        cout << "| " << setw(10) << left << clsInputValidate::IncryptPassword(User.Password);
         cout << "| " << setw(12) << left << User.Permissions;
 
     }
