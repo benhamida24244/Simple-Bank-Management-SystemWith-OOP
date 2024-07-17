@@ -17,7 +17,10 @@ C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with O
 C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsUtil.h(64,1): warning C4102: 'defualt': unreferenced label
 C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsTotalBalancesScreen.h(57,82): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsTransferBalance.h(69,36): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsUpdateCurrency.h(24,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsCurrencyCalculator.h(50,51): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsLoginScreen.h(52): warning C4715: 'clsLoginScreen::_Login': not all control paths return a value
 C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsBankClient.h(383): warning C4715: 'clsBankClient::Save': not all control paths return a value
 C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsUser.h(320): warning C4715: 'clsUser::Save': not all control paths return a value
+C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\Bank system with OOp\clsCurrency.h(215): warning C4715: 'clsCurrency::Save': not all control paths return a value
   Bank system with OOp.vcxproj -> C:\Users\LENOVO\Desktop\Simple-Bank-Management-SystemWith-OOP\x64\Debug\Bank system with OOp.exe

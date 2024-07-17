@@ -40,7 +40,7 @@ private:
 
             cout << "Enter Password? ";
             cin >> Password;
-            string pss = clsInputValidate::DecryptPassword(Password);
+           string pss = clsInputValidate::DecryptPassword(Password);
             CurrentUser = clsUser::Find(Username, pss);
 
             LoginFaild = CurrentUser.IsEmpty();

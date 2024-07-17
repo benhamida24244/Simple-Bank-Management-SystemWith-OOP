@@ -66,7 +66,6 @@ private:
         cout << "\n\nPress any key to go back to Transactions Menue...";
         system("pause>0");
         TransactionsMenue();
-
     }
 
     static void _PerformTransactionsMenueOption(enTransactionsMenueOptions TransactionsMenueOption)
